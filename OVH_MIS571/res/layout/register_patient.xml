@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper"  
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	<LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/headerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/patient_register"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp" >
+
+        
+        <TableRow
+            android:id="@+id/tableRowfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+             
+            
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstname" 
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/firstname_editText"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:textStyle="italic" >
+
+            <requestFocus />
+        </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+        
+            <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastname" 
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/lastname_editText"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:textStyle="italic" >
+
+            <requestFocus />
+        </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowsex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+        
+            <Spinner
+             android:id="@+id/sex"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_weight="1"
+             android:entries="@array/sex_array"
+             android:prompt="@string/sex" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRowdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+        
+         <TextView
+             android:id="@+id/dob"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:text="@string/dob"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/dob_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+            <requestFocus />   
+        </TableRow>
+        
+        
+        <TableRow
+            android:id="@+id/tableRowaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+        
+         <TextView
+             android:id="@+id/address"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:text="@string/address"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/address_editText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_weight="1"
+             android:ems="10" 
+             android:textSize="15sp"
+             android:textStyle="italic">
+		<requestFocus />
+		</EditText>   
+        </TableRow>
+        
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+        
+          <TextView
+             android:id="@+id/city"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:text="@string/CITY"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/city_editText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_weight="1"
+             android:ems="10" 
+             android:textSize="15sp"
+             android:textStyle="italic">
+		<requestFocus />  
+		</EditText>  
+        </TableRow>
+        
+        
+        <TableRow
+            android:id="@+id/tableRowstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+        
+         <TextView
+             android:id="@+id/state"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:text="@string/state"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/state_editText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:ems="10"
+             android:textSize="15sp"
+             android:textStyle="italic"
+              />
+
+		<requestFocus />     
+        </TableRow>
+        
+        
+        <TableRow
+            android:id="@+id/tableRowzipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"  >
+        
+            <TextView
+             android:id="@+id/zip"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:text="@string/zip"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/zip_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <requestFocus />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tablephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+              android:id="@+id/phone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="@string/phone"
+              android:textSize="15sp"
+              android:textStyle="bold" />
+            <EditText
+                android:id="@+id/phone_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+
+        </TableRow>
+    </TableLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        
+     <Button
+        android:id="@+id/registersubmitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="REGISTER" 
+        android:textStyle="bold"/>
+     
+     <Button
+        android:id="@+id/registerbackbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="MAIN" 
+        android:textStyle="bold"/>
+    </LinearLayout> 
+</LinearLayout>
